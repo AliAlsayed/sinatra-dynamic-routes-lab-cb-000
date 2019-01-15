@@ -30,7 +30,7 @@ class App < Sinatra::Base
     elsif params[:operation] == 'multiply'
       (params[:number1].to_i * params[:number1].to_i).to_s
     else
-      'idiot'
+      (params[:number1].to_i * params[:number1].to_i).to_s
     end
   end
 
