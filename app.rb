@@ -26,13 +26,13 @@ class App < Sinatra::Base
     fail
     result = ''
     if params[:operation] == 'add'
-      result = (params[:number1].to_i + params[:number1].to_i).to_s
+      result = (params[:number1].to_i + params[:number2].to_i).to_s
     elsif params[:operation] == 'subtract'
-      result = (params[:number1].to_i - params[:number1].to_i).to_s
+      result = (params[:number1].to_i - params[:number2].to_i).to_s
     elsif params[:operation] == 'multiply'
-      result = (params[:number1].to_i * params[:number1].to_i).to_s
+      result = (params[:number1].to_i * params[:number2].to_i).to_s
     else
-      result = (params[:number1].to_i * params[:number1].to_i).to_s
+      result = (params[:number1].to_i * params[:number2].to_i).to_s
     end
     result
   end
